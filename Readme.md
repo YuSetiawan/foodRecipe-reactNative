@@ -84,9 +84,29 @@ NEXT_PUBLIC_API = [BACKEND_URL]
 <!-- ROADMAP -->
 
 ## Screenshots
+
 <table>
-<img src="https://media.discordapp.net/attachments/757600499359809556/1153221975565680690/image-removebg-preview.png?width=781&height=498"  border="0" border="0" alt="1" />
-<img src="https://media.discordapp.net/attachments/757600499359809556/1153221975842500628/image-removebg-preview_1.png?width=777&height=501"  border="0" border="0" alt="1" />
+ <tr>
+    <td><img width="300px" src="https://media.discordapp.net/attachments/1066029493287919706/1153745178327257149/image-removebg-preview_4.png?width=307&height=661"  border="0" border="0" alt="1" /></td>
+    <td> <img width="300px" src="https://media.discordapp.net/attachments/1066029493287919706/1153745178054639626/image-removebg-preview_3.png?width=307&height=662" \ border="0"  border="0"  border="0"  alt="2" /></td>
+    <td> <img width="300px" src="https://media.discordapp.net/attachments/1066029493287919706/1153745179484897351/image-removebg-preview_8.png?width=310&height=662" \ border="0"  border="0"  border="0"  alt="3" /></td>
+  </tr>
+   <tr>
+    <td>Landing Page</td>
+    <td>Detail Menu Page</td>
+    <td>Search Menu Page</td>
+  </tr>
+
+ <tr>
+    <td><img width="300px" src="https://media.discordapp.net/attachments/1066029493287919706/1153745178566344775/image-removebg-preview_5.png?width=305&height=662"  border="0" border="0" alt="1" /></td>
+    <td> <img width="300px" src="https://media.discordapp.net/attachments/1066029493287919706/1153745177706508378/image-removebg-preview_2.png?width=307&height=662" \ border="0"  border="0"  border="0"  alt="2" /></td>
+    <td> <img width="300px" src="https://media.discordapp.net/attachments/1066029493287919706/1153745178914467920/image-removebg-preview_6.png?width=307&height=662" \ border="0"  border="0"  border="0"  alt="3" /></td>
+  </tr>
+   <tr>
+    <td>Add Recipe Page</td>
+    <td>Profile Menu Page</td>
+    <td>My Recipe Page</td>
+  </tr>
 </table>
 <!-- CONTRIBUTING -->
 
