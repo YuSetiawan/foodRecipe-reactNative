@@ -4,6 +4,8 @@
 </div>
   <h3 align="center">Food Recipe App</h3>
   <p align="center">
+    <a href="https://food-recipe-server-six.vercel.app/">Api Demo</a>
+    <br/>
     <a href="https://github.com/YuSetiawan/foodRecipe-reactNative"><strong>Explore the docs »</strong></a>
   </p>
 </p>
@@ -14,7 +16,6 @@
 
 - [Table of Contents](#table-of-contents)
 - [About The Project](#about-the-project)
-  - [Built With](#built-with)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
@@ -22,17 +23,14 @@
 - [Screenshots](#screenshots)
 - [Contributing](#contributing)
 - [Related Project](#related-project)
-- [Contact](#contact)
 
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
 
-Rekrut is a jobseeker website project that aims to assist Software Developers in finding jobs that match their skills.
-
-On this website, job seekers can create a profile, upload their experience and portfolio. Peworld also offers a feature to connect job seekers with companies that are looking for candidates with the required skills.
-
-One of the outstanding features of Peworld is the ability to identify the skills and interests of job seekers based on their abilities. With this information, recruiters can directly connect through the hire feature.
+Mama Recipe is a culinary platform that allows users to explore and share their favorite food recipes. 
+Users can sign up as food enthusiasts and/or recipe creators. 
+The platform offers a range of features tailored to both groups. This web application is built using ReactJS, ExpressJS, and PostgreSQL.
 
 <!-- GETTING STARTED -->
 
@@ -122,6 +120,10 @@ Contributions are what make the open source community such an amazing place to b
 
 ## Related Project
 
-:rocket: [`Frontend Hiring App`](https://github.com/YuSetiawan/foodRecipe-reactNative)
+:rocket: [`Backend Food Recipe Mobile App`](https://github.com/YuSetiawan/foodRecipe-server)
 
-Project link : [Rekrut Client](https://github.com/YuSetiawan/foodRecipe-reactNative)
+:rocket: [`Frontend Food Recipe Mobile App`](https://github.com/YuSetiawan/foodRecipe-reactNative)
+
+:rocket: [`API Demo`](https://food-recipe-server-six.vercel.app/)
+
+Project link : [Food Recipe Client](https://github.com/YuSetiawan/foodRecipe-reactNative)
