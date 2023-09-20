@@ -1,7 +1,7 @@
 import {StyleSheet} from 'react-native';
 import React from 'react';
 import axios from 'axios';
-import profileImg from '../../assets/icon/Users.png';
+import applogo from '../../assets/icon/applogo.png';
 import FeatherIcon from 'react-native-vector-icons/Feather';
 import {Icon, Box, FormControl, Input, NativeBaseProvider, Center, Image, Text, Button} from 'native-base';
 import {Link, useRouter} from 'expo-router';
@@ -13,24 +13,24 @@ const login = () => {
 
   const handleSubmit = async (values) => {
     await axios
-      .post('http://192.168.1.9:4000/user/login', values)
+      .post('https://food-recipe-server-six.vercel.app/user/login', values)
       .then((res) => {
         console.log(res.data);
-        alert('Login Succesfull');
+        alert(res.data.message);
         AsyncStorage.setItem('token', res.data.data.token);
         AsyncStorage.setItem('id', res.data.data.id);
         router.push('/');
       })
       .catch((err) => {
         console.log(err);
-        alert('Email/Pass word incorrect');
+        alert(err.data.message);
       });
   };
   return (
     <NativeBaseProvider>
       <Box style={styles.container} marginTop="16">
         <Center>
-          <Image source={profileImg} alt="Welcome" />
+          <Image height={120} width={120} source={applogo} alt="Welcome" />
         </Center>
       </Box>
       <Box style={styles.container}>

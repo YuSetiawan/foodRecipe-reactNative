@@ -11,7 +11,7 @@ const register = () => {
 
   const handleSubmit = (values) => {
     axios
-      .post('http://192.168.1.9:4000/user/register', values)
+      .post('https://food-recipe-server-six.vercel.app/user/register', values)
       .then((res) => {
         console.log(res.data);
         alert(res.data.message);

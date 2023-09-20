@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Text, Input, View, HStack, Button, TextArea} from 'native-base';
+import {Text, Input, View, HStack, Button, TextArea, Center} from 'native-base';
 import {Modal, StyleSheet} from 'react-native';
 import FeatherIcon from 'react-native-vector-icons/Feather';
 import * as ImagePicker from 'expo-image-picker';
@@ -50,8 +50,11 @@ const UpdateModal = ({recipes_id, recipes_title, recipes_ingredients, recipes_ph
           <Text mt={3}>Url Video</Text>
           <Input value={video} onChangeText={(value) => setVideo(value)} />
           <Text mt={3}>Picture</Text>
-          <Button mt={3} onPress={pickImage} backgroundColor={'transparent'}>
-            <FeatherIcon name="camera" size={20} color={'black'} />
+          <Button my={1} onPress={pickImage} backgroundColor={'transparent'} borderWidth={'1'}>
+            <Center>
+              <FeatherIcon name="camera" size={20} color={'black'} />
+              <Text>Add Photo</Text>
+            </Center>
           </Button>
 
           <HStack mt={3}>

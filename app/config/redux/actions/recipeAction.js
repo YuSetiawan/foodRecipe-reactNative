@@ -1,15 +1,5 @@
 import axios from 'axios';
 
-// export const getAllRecipe = () => async (dispatch) => {
-//   try {
-//     const recipes = await axios.get(`http://192.168.1.9:4000/recipes/`);
-//     const result = recipes.data.data;
-//     dispatch({type: 'GET_ALL_RECIPE', payload: result});
-//   } catch (err) {
-//     console.error(err.message);
-//   }
-// };
-
 export const createRecipeActions = (recipes_title, recipes_ingredients, recipes_video, recipes_photo, userId) => async (dispatch) => {
   try {
     const formData = new FormData();
@@ -24,7 +14,7 @@ export const createRecipeActions = (recipes_title, recipes_ingredients, recipes_
         type: 'image/jpeg',
       });
     }
-    const recipes = await axios.post('http://192.168.1.9:4000/recipes/', formData, {
+    const recipes = await axios.post('https://food-recipe-server-six.vercel.app/recipes/', formData, {
       headers: {
         'Content-Type': 'multipart/form-data',
       },
@@ -53,7 +43,7 @@ export const updateRecipeActions = (title, ingredients, photo, video, recipes_id
         type: 'image/jpeg',
       });
     }
-    const recipes = await axios.put(`http://192.168.1.9:4000/recipes/${recipes_id}`, formData, {
+    const recipes = await axios.put(`https://food-recipe-server-six.vercel.app/recipes/${recipes_id}`, formData, {
       headers: {
         'Content-Type': 'multipart/form-data',
       },
@@ -72,7 +62,7 @@ export const updateRecipeActions = (title, ingredients, photo, video, recipes_id
 
 export const deleteRecipeActions = (recipes_id) => async (dispatch) => {
   try {
-    const recipes = await axios.delete(`http://192.168.1.9:4000/recipes/${recipes_id}`);
+    const recipes = await axios.delete(`https://food-recipe-server-six.vercel.app/recipes/${recipes_id}`);
 
     alert('Delete Recipe Success');
 

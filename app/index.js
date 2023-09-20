@@ -32,7 +32,7 @@ const login = () => {
   const getData = async () => {
     const idUser = await AsyncStorage.getItem('id');
     axios
-      .get(`http://192.168.1.9:4000/user/profile/${idUser}`)
+      .get(`https://food-recipe-server-six.vercel.app/user/profile/${idUser}`)
       .then((response) => {
         setData(response.data.data[0]);
       })
@@ -45,7 +45,7 @@ const login = () => {
 
   const getRecipe = async () => {
     axios
-      .get(`http://192.168.1.9:4000/recipes`)
+      .get(`https://food-recipe-server-six.vercel.app/recipes`)
       .then((response) => {
         setRecipes(response.data.data);
       })

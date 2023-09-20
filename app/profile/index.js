@@ -30,7 +30,7 @@ const Profile = () => {
   const getData = async () => {
     const idUser = await AsyncStorage.getItem('id');
     await axios
-      .get(`http://192.168.1.9:4000/user/profile/${idUser}`)
+      .get(`https://food-recipe-server-six.vercel.app/user/profile/${idUser}`)
       .then((response) => {
         setData(response.data.data[0]);
       })
@@ -121,7 +121,7 @@ const Profile = () => {
                     router.push('/login');
                   }}
                 >
-                  Delete
+                  Log Out
                 </Button>
               </HStack>
             </View>

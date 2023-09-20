@@ -7,7 +7,7 @@ export const createCommentActions = (id, idUser, comment) => async (dispatch) =>
       comment_text: comment,
       users_id: idUser,
     };
-    const comments = await axios.post('http://192.168.1.9:4000/comments/', data);
+    const comments = await axios.post('https://food-recipe-server-six.vercel.app/comments/', data);
     if (comments.data.statusCode === 201) {
       alert('Comment created');
     }
@@ -21,7 +21,7 @@ export const createCommentActions = (id, idUser, comment) => async (dispatch) =>
 
 export const getUserCommentActions = (recipes_id) => async (dispatch) => {
   try {
-    const comments = await axios.get(`http://192.168.1.9:4000/comments/${recipes_id}`);
+    const comments = await axios.get(`https://food-recipe-server-six.vercel.app/comments/${recipes_id}`);
     const result = comments.data.data;
     dispatch({type: 'GET_ALL_COMMENT', payload: result});
   } catch (err) {

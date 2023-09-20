@@ -24,7 +24,7 @@ const MyRecipe = () => {
     const idUser = await AsyncStorage.getItem('id');
     console.log(idUser);
     axios
-      .get(`http://192.168.1.9:4000/bookmarks/${idUser}`)
+      .get(`https://food-recipe-server-six.vercel.app/bookmarks/${idUser}`)
       .then((response) => {
         setRecipes(response.data.data);
         console.log(response.data.data);

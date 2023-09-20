@@ -28,7 +28,7 @@ const PopularMenu = () => {
 
   const getData = async () => {
     axios
-      .get(`http://192.168.1.9:4000/recipes`)
+      .get(`https://food-recipe-server-six.vercel.app/recipes`)
       .then((response) => {
         setRecipes(response.data.data);
       })

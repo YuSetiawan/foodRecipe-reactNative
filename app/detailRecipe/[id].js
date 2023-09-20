@@ -39,7 +39,7 @@ const DetailRecipe = () => {
   // Handle GET
   const getData = async () => {
     await axios
-      .get(`http://192.168.1.9:4000/recipes/${id}`)
+      .get(`https://food-recipe-server-six.vercel.app/recipes/${id}`)
       .then((response) => {
         setRecipes(response.data.data[0]);
       })
@@ -48,7 +48,7 @@ const DetailRecipe = () => {
 
   const getComment = async () => {
     await axios
-      .get(`http://192.168.1.9:4000/comments/${id}`)
+      .get(`https://food-recipe-server-six.vercel.app/comments/${id}`)
       .then((response) => {
         setCommentData(response.data.data);
       })
@@ -59,7 +59,7 @@ const DetailRecipe = () => {
   const handleLike = async () => {
     try {
       const idUser = await AsyncStorage.getItem('id');
-      const res = await axios.post(`http://192.168.1.9:4000/likeds/`, {
+      const res = await axios.post(`https://food-recipe-server-six.vercel.app/likeds/`, {
         users_id: idUser,
         recipes_id: id,
       });
@@ -73,7 +73,7 @@ const DetailRecipe = () => {
   const handleSave = async () => {
     try {
       const idUser = await AsyncStorage.getItem('id');
-      const res = await axios.post(`http://192.168.1.9:4000/bookmarks/`, {
+      const res = await axios.post(`https://food-recipe-server-six.vercel.app/bookmarks/`, {
         users_id: idUser,
         recipes_id: id,
       });
@@ -124,16 +124,14 @@ const DetailRecipe = () => {
             </TouchableOpacity>
           </View>
           {activeTab === 'Ingredients' && (
-            <ScrollView>
-              <View style={styles.tabContent}>
-                <View style={styles.Ingredients}>
-                  <Text style={{padding: 20, fontSize: 14, color: '#666666'}}>{recipes.recipes_ingredients}</Text>
-                </View>
+            <Box mb={8}>
+              <View style={styles.Ingredients}>
+                <Text style={{padding: 20, fontSize: 14, color: '#666666'}}>{recipes.recipes_ingredients}</Text>
               </View>
-            </ScrollView>
+            </Box>
           )}
           {activeTab === 'StepVideo' && (
-            <View style={styles.tabContent}>
+            <View>
               <View style={styles.StepVideo}>
                 <Button backgroundColor="#EFC81A" borderRadius="16" margin="1">
                   <Icon size="5" color="white" as={<FeatherIcon name="play" />} />
@@ -147,7 +145,7 @@ const DetailRecipe = () => {
                   </Box>
                 </Link>
               </View>
-              <View style={styles.tabContent}>
+              <View>
                 <View style={styles.Ingredients}>
                   <TextArea style={{fontSize: 14}} placeholder="Comment" value={comment} onChangeText={setComment} />
                 </View>
@@ -157,7 +155,7 @@ const DetailRecipe = () => {
                   </Text>
                 </Button>
               </View>
-              <View style={styles.tabContent}>
+              <View>
                 <Text margin="3">Comment :</Text>
                 {commentData.map((comment) => (
                   <>
