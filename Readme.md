@@ -85,6 +85,17 @@ NEXT_PUBLIC_API = [BACKEND_URL]
 
 <table>
  <tr>
+    <td><img width="300px" src="https://cdn.discordapp.com/attachments/1066029493287919706/1153951760570912778/image-removebg-preview_3.png"  border="0" border="0" alt="1" /></td>
+    <td> <img width="300px" src="https://cdn.discordapp.com/attachments/1066029493287919706/1153951760185049150/image-removebg-preview_2.png" \ border="0"  border="0"  border="0"  alt="2" /></td>
+    <td> <img width="300px" src="https://cdn.discordapp.com/attachments/1066029493287919706/1153745179191283852/image-removebg-preview_7.png" \ border="0"  border="0"  border="0"  alt="3" /></td>
+  </tr>
+   <tr>
+    <td>Register Page</td>
+    <td>Login Page</td>
+    <td>Change Profile Page</td>
+  </tr>
+  
+  <tr>
     <td><img width="300px" src="https://media.discordapp.net/attachments/1066029493287919706/1153745178327257149/image-removebg-preview_4.png?width=307&height=661"  border="0" border="0" alt="1" /></td>
     <td> <img width="300px" src="https://media.discordapp.net/attachments/1066029493287919706/1153745178054639626/image-removebg-preview_3.png?width=307&height=662" \ border="0"  border="0"  border="0"  alt="2" /></td>
     <td> <img width="300px" src="https://media.discordapp.net/attachments/1066029493287919706/1153745179484897351/image-removebg-preview_8.png?width=310&height=662" \ border="0"  border="0"  border="0"  alt="3" /></td>
